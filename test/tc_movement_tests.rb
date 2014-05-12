@@ -53,6 +53,7 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0], data[1] + 1), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
+	end
     
     [[0, 0, Direction::EAST],
      [0, 1, Direction::EAST],
@@ -80,7 +81,8 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0] + 1, data[1]), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
-      
+    end
+	
     [[0, 4, Direction::SOUTH],
      [1, 4, Direction::SOUTH],
      [2, 4, Direction::SOUTH],
@@ -107,6 +109,7 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0], data[1] - 1), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
+	end
     
 	[[4, 4, Direction::WEST],
      [4, 3, Direction::WEST],
@@ -134,27 +137,28 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0] - 1, data[1]), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
+	end
 	
-    [[0, 4, Direction.NORTH],
-     [1, 4, Direction.NORTH],
-     [2, 4, Direction.NORTH],
-     [3, 4, Direction.NORTH],
-     [4, 4, Direction.NORTH],
-     [4, 0, Direction.EAST],
-     [4, 1, Direction.EAST],
-     [4, 2, Direction.EAST],
-     [4, 3, Direction.EAST],
-     [4, 4, Direction.EAST],
-     [0, 0, Direction.SOUTH],
-     [1, 0, Direction.SOUTH],
-     [2, 0, Direction.SOUTH],
-     [3, 0, Direction.SOUTH],
-     [4, 0, Direction.SOUTH],
-     [0, 0, Direction.WEST],
-     [0, 1, Direction.WEST],
-     [0, 2, Direction.WEST],
-     [0, 3, Direction.WEST],
-     [0, 4, Direction.WEST]].each do |data|
+    [[0, 4, Direction::NORTH],
+     [1, 4, Direction::NORTH],
+     [2, 4, Direction::NORTH],
+     [3, 4, Direction::NORTH],
+     [4, 4, Direction::NORTH],
+     [4, 0, Direction::EAST],
+     [4, 1, Direction::EAST],
+     [4, 2, Direction::EAST],
+     [4, 3, Direction::EAST],
+     [4, 4, Direction::EAST],
+     [0, 0, Direction::SOUTH],
+     [1, 0, Direction::SOUTH],
+     [2, 0, Direction::SOUTH],
+     [3, 0, Direction::SOUTH],
+     [4, 0, Direction::SOUTH],
+     [0, 0, Direction::WEST],
+     [0, 1, Direction::WEST],
+     [0, 2, Direction::WEST],
+     [0, 3, Direction::WEST],
+     [0, 4, Direction::WEST]].each do |data|
       define_method("test_invalid_move_#{data[2]}_from_square_#{data[0]}_#{data[1]}") do
         @bad_robot.place(data[0], data[1], data[2])
         @bad_robot.move
@@ -163,7 +167,4 @@ class MovementTests < TestBase
       end
     end
   end
-end
-end
-end
 end
