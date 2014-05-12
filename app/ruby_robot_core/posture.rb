@@ -84,7 +84,7 @@ module RubyRobotCore
     end
 
     def equals(other)
-      return ((@Direction.Equals(other.Direction)) and (@Position.Equals(other.Position)))
+      return ((@Direction == other.Direction) and (@Position.Equals(other.Position)))
     end
   end
 end
