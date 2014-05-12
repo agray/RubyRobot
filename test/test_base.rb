@@ -21,7 +21,7 @@
 # * THE SOFTWARE.
 # 
 require 'test/unit'
-require 'app/ruby_robot_core/robot.rb'
+require './app/ruby_robot_core/robot.rb'
 
 class TestBase < Test::Unit::TestCase
   #Apologies to JJ Abrams
