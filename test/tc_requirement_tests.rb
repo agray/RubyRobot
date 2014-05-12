@@ -52,3 +52,4 @@ class RequirementTests < TestBase
   end
 end
 end
+end
