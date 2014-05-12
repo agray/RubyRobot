@@ -20,10 +20,22 @@
 # * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # * THE SOFTWARE.
 #
-require 'rake/testtask'
+gem 'test-unit'
+require 'test/unit'
+require 'test/unit/ui/console/testrunner'
+require './tc_placement_tests.rb'
+require './tc_movement_tests.rb'
+require './tc_example_tests.rb'
+require './tc_command_tests.rb'
 
-Rake::TestTask.new do |t|
-  t.libs << "test"
-  t.test_files = FileList['test/*_tests.rb']
-  t.verbose = true
+class RobotTestSuite < Test::Unit::TestSuite
+  def self.suite
+    suite = Test::Unit::TestSuite.new
+    suite << MovementTests.suite
+    suite << ExampleTests.suite
+	suite << CommandTests.suite
+	suite << PlacementTests.suite
+	return suite
+  end
 end
+Test::Unit::UI::Console::TestRunner.run(RobotTestSuite)
