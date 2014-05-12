@@ -20,9 +20,8 @@
 # * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # * THE SOFTWARE.
 #
-gem 'test-unit'
-require 'test/unit'
-require 'test/unit/ui/console/testrunner'
+gem 'minitest'
+#require 'minitest/autorun'
 require_relative 'tc_movement_tests.rb'
 require_relative 'tc_example_tests.rb'
 require_relative 'tc_command_tests.rb'
