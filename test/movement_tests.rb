@@ -20,7 +20,7 @@
 # * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # * THE SOFTWARE.
 # 
-require './test_base.rb'
+require 'test_base.rb'
 require '../app/turn_to.rb'
 require '../app/direction.rb'
 require '../app/ruby_robot_core/posture.rb'
