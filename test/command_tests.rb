@@ -21,7 +21,7 @@
 # * THE SOFTWARE.
 # 
 require 'test_base.rb'
-require '../app/turn_to.rb'
+require './app/turn_to.rb'
 
 class CommandTests < TestBase
   def ignore_move_when_unplaced

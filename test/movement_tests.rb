@@ -21,10 +21,10 @@
 # * THE SOFTWARE.
 # 
 require 'test_base.rb'
-require '../app/turn_to.rb'
-require '../app/direction.rb'
-require '../app/ruby_robot_core/posture.rb'
-require '../app/ruby_robot_core/position.rb'
+require './app/turn_to.rb'
+require './app/direction.rb'
+require './app/ruby_robot_core/posture.rb'
+require './app/ruby_robot_core/position.rb'
 
 class MovementTests < TestBase
   #Move North Tests

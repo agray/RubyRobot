@@ -21,8 +21,8 @@
 # * THE SOFTWARE.
 # 
 require 'test_base.rb'
-require '../app/turn_to.rb'
-require '../app/direction.rb'
+require './app/turn_to.rb'
+require './app/direction.rb'
 
 class ExampleTests < TestBase
   def example_test_a
