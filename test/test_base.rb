@@ -23,7 +23,7 @@
 require 'minitest/autorun'
 require './app/ruby_robot_core/robot.rb'
 
-class TestBase < MiniTest::Unit::TestCase
+class TestBase < MiniTest::Unit::Test
   #Apologies to JJ Abrams
   def setup
    @bad_robot = RubyRobotCore::Robot.new
