@@ -28,14 +28,14 @@ require './tc_movement_tests.rb'
 require './tc_example_tests.rb'
 require './tc_command_tests.rb'
 
-class RobotTestSuite < Test::Unit::TestSuite
-  def self.suite
-    suite = Test::Unit::TestSuite.new
-    suite << MovementTests.suite
-    suite << ExampleTests.suite
-	suite << CommandTests.suite
-	suite << PlacementTests.suite
-	return suite
-  end
-end
-Test::Unit::UI::Console::TestRunner.run(RobotTestSuite)
+#class RobotTestSuite < Test::Unit::TestSuite
+#  def self.suite
+#    suite = Test::Unit::TestSuite.new
+#    suite << MovementTests.suite
+#    suite << ExampleTests.suite
+#	suite << CommandTests.suite
+#	suite << PlacementTests.suite
+#	return suite
+#  end
+#end
+#Test::Unit::UI::Console::TestRunner.run(RobotTestSuite)
