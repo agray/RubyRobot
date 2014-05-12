@@ -20,7 +20,7 @@
 # * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # * THE SOFTWARE.
 # 
-require '../app/table.rb'
+require './app/table.rb'
 require_relative 'position.rb'
 require_relative 'posture.rb'
 
