@@ -26,8 +26,6 @@ module RubyRobotCore
       @Position = position
       @Direction = direction
     end
-	
-	attr_reader :Direction,:Position
 
     def can_move
 	  case @Direction
@@ -88,5 +86,8 @@ module RubyRobotCore
     def equals(other)
       return ((@Direction == other.Direction) and (@Position.equals(other.Position)))
     end
+	
+	private
+	attr_reader :Direction,:Position
   end
 end

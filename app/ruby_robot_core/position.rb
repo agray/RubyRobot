@@ -68,5 +68,8 @@ module RubyRobotCore
     def equals(other)
       (@X == other.X) and (@Y == other.Y)
     end
+	
+	private
+	attr_reader :X,:Y
   end
 end
