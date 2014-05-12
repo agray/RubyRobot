@@ -26,6 +26,8 @@ module RubyRobotCore
       @Position = position
       @Direction = direction
     end
+	
+	attr_reader :Direction,:Position
 
     def can_move
 	  case @Direction
