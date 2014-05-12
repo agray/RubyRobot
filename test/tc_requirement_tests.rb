@@ -26,21 +26,21 @@ require './app/direction.rb'
 
 class RequirementTests < TestBase
   [["dummy"]].each do |data|
-      define_method("requirement_test_1") do
+      define_method("requirement_#{data[0]}_test_1") do
         @bad_robot.place(0, 0, Direction::NORTH)
         @bad_robot.move
         assert_equal "Output: 0,1,NORTH", @bad_robot.report_posture
       end
   
   [["dummy"]].each do |data|
-      define_method("requirement_test_2") do
+      define_method("requirement_#{data[0]}_test_2") do
         @bad_robot.place(0, 0, Direction::NORTH)
         @bad_robot.turn(TurnTo::LEFT)
         assert_equal "Output: 0,0,WEST", @bad_robot.report_posture
       end
 
   [["dummy"]].each do |data|
-      define_method("requirement_test_3") do
+      define_method("requirement_#{data[0]}_test_3") do
         @bad_robot.place(1, 2, Direction::EAST)
         @bad_robot.move
         @bad_robot.move
