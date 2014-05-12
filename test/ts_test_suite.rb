@@ -23,10 +23,10 @@
 gem 'test-unit'
 require 'test/unit'
 require 'test/unit/ui/console/testrunner'
-require_relative 'tc_placement_tests.rb'
 require_relative 'tc_movement_tests.rb'
 require_relative 'tc_example_tests.rb'
 require_relative 'tc_command_tests.rb'
+require_relative 'tc_placement_tests.rb'
 
 #class RobotTestSuite < Test::Unit::TestSuite
 #  def self.suite
