@@ -23,6 +23,6 @@
 gem 'minitest'
 require 'minitest/autorun'
 require_relative 'tc_movement_tests.rb'
-require_relative 'tc_example_tests.rb'
+require_relative 'tc_requirement_tests.rb'
 require_relative 'tc_command_tests.rb'
 require_relative 'tc_placement_tests.rb'

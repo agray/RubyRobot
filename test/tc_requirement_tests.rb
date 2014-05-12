@@ -24,20 +24,20 @@ require 'test_base.rb'
 require './app/turn_to.rb'
 require './app/direction.rb'
 
-class ExampleTests < TestBase
-  def example_test_a
+class RequirementTests < TestBase
+  def requirement_test_1
     @bad_robot.place(0, 0, Direction::NORTH)
     @bad_robot.move
     assert_equal "Output: 0,1,NORTH", @bad_robot.report_posture
   end
 
-  def example_test_b
+  def requirement_test_2
     @bad_robot.place(0, 0, Direction::NORTH)
     @bad_robot.turn(TurnTo::LEFT)
     assert_equal "Output: 0,0,WEST", @bad_robot.report_posture
   end
   
-  def example_test_c
+  def requirement_test_3
     @bad_robot.place(1, 2, Direction::EAST)
     @bad_robot.move
     @bad_robot.move
