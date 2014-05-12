@@ -31,5 +31,5 @@ class PlacementTests < TestBase
     end
 
 
-
+  end
 end
