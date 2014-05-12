@@ -69,7 +69,7 @@ module RubyRobotCore
       (@X == other.X) and (@Y == other.Y)
     end
 	
-	private
+	protected
 	attr_reader :X,:Y
   end
 end
