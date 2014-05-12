@@ -21,8 +21,8 @@
 # * THE SOFTWARE.
 # 
 require './app/table.rb'
-require 'position.rb'
-require 'posture.rb'
+require_relative 'position.rb'
+require_relative 'posture.rb'
 
 module RubyRobotCore
   class Robot
