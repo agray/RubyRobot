@@ -53,3 +53,4 @@ class CommandTests < TestBase
 	end
   end
 end
+end
