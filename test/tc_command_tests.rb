@@ -24,34 +24,22 @@ require 'test_base.rb'
 require './app/turn_to.rb'
 
 class CommandTests < TestBase
-  [["dummy"]].each do |data|
-      define_method("ignore_move_when_unplaced") do
-	    puts data[0]
-		@bad_robot.move
-        assert_equal false, @bad_robot.is_placed
-      end
-
-  [["dummy"]].each do |data|
-      define_method("ignore_turn_left_move_when_unplaced") do
-	    puts data[0]
-		@bad_robot.turn(TurnTo::LEFT)
-        assert_equal false, @bad_robot.is_placed
-      end
-
-  [["dummy"]].each do |data|
-      define_method("ignore_turn_right_move_when_unplaced") do
-	    puts data[0]
-		@bad_robot.turn(TurnTo::RIGHT)
-        assert_equal false, @bad_robot.is_placed
-      end
-	  
-  [["dummy"]].each do |data|
-      define_method("ignore_report_when_unplaced") do
-	    puts data[0]
-		assert_equal "", @bad_robot.report_posture
-      end
-	end
+  def ignore_move_when_unplaced
+    @bad_robot.move
+    assert_equal false, @bad_robot.is_placed
   end
-end
-end
+
+  def ignore_turn_left_move_when_unplaced
+    @bad_robot.turn(TurnTo::LEFT)
+    assert_equal false, @bad_robot.is_placed
+  end
+
+  def ignore_turn_right_move_when_unplaced
+    @bad_robot.turn(TurnTo::RIGHT)
+    assert_equal false, @bad_robot.is_placed
+  end
+	  
+  def ignore_report_when_unplaced
+    assert_equal "", @bad_robot.report_posture
+  end
 end

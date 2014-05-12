@@ -25,33 +25,24 @@ require './app/turn_to.rb'
 require './app/direction.rb'
 
 class RequirementTests < TestBase
-  [["dummy"]].each do |data|
-      define_method("requirement_#{data[0]}_test_1") do
-	    puts data[0]
-        @bad_robot.place(0, 0, Direction::NORTH)
-        @bad_robot.move
-        assert_equal "Output: 0,1,NORTH", @bad_robot.report_posture
-      end
-  
-  [["dummy"]].each do |data|
-      define_method("requirement_#{data[0]}_test_2") do
-        puts data[0]
-        @bad_robot.place(0, 0, Direction::NORTH)
-        @bad_robot.turn(TurnTo::LEFT)
-        assert_equal "Output: 0,0,WEST", @bad_robot.report_posture
-      end
-
-  [["dummy"]].each do |data|
-      define_method("requirement_#{data[0]}_test_3") do
-        puts data[0]
-        @bad_robot.place(1, 2, Direction::EAST)
-        @bad_robot.move
-        @bad_robot.move
-        @bad_robot.turn(TurnTo::LEFT)
-        @bad_robot.move
-        assert_equal "Output: 3,3,NORTH", @bad_robot.report_posture
-      end
-	end
+  def requirement__test_1
+    @bad_robot.place(0, 0, Direction::NORTH)
+    @bad_robot.move
+    assert_equal "Output: 0,1,NORTH", @bad_robot.report_posture
   end
-end
+  
+  def requirement_test_2
+    @bad_robot.place(0, 0, Direction::NORTH)
+    @bad_robot.turn(TurnTo::LEFT)
+    assert_equal "Output: 0,0,WEST", @bad_robot.report_posture
+  end
+
+  def requirement_test_3
+    @bad_robot.place(1, 2, Direction::EAST)
+    @bad_robot.move
+    @bad_robot.move
+    @bad_robot.turn(TurnTo::LEFT)
+    @bad_robot.move
+    assert_equal "Output: 3,3,NORTH", @bad_robot.report_posture
+  end
 end
