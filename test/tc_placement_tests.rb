@@ -129,7 +129,12 @@ class PlacementTests < TestBase
       assert_equal "Output: #{data[0]},#{data[1]},#{data[2]}", @bad_robot.report_posture
     end
 
-
-  end  
+  [[-1, 0, Direction::NORTH]].each do |data|
+    define_method("test_invalid_#{data[2]}_placement_at_square_#{data[0]}_#{data[1]}") do
+      @bad_robot.place(data[0], data[1], data[2])
+      assert_equal false, @bad_robot.is_placed
+    end
   
+  
+  end
 end
