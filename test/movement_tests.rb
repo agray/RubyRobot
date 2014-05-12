@@ -136,7 +136,7 @@ class MovementTests < TestBase
   def valid_move_north_test_from_square_16
     @bad_robot.place(0, 3, Direction.NORTH)
     @bad_robot.move
-    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 3), Direction.NORTH)
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 4), Direction.NORTH)
     assert_equal true, @bad_robot.zen_like(expectedPosture)
   end
   
@@ -169,12 +169,425 @@ class MovementTests < TestBase
   end
   
   #Move East Tests
+  def valid_move_east_test_from_square_1
+    @bad_robot.place(0, 0, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 0), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
+  def valid_move_east_test_from_square_2
+    @bad_robot.place(0, 1, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 1), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_3
+    @bad_robot.place(0, 2, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 2), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_4
+    @bad_robot.place(0, 3, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 3), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_5
+    @bad_robot.place(0, 4, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 4), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_6
+    @bad_robot.place(1, 0, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 0), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_7
+    @bad_robot.place(1, 1, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 1), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_8
+    @bad_robot.place(1, 2, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 2), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_9
+    @bad_robot.place(1, 3, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 3), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_10
+    @bad_robot.place(1, 4, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 4), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_11
+    @bad_robot.place(2, 0, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 0), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_12
+    @bad_robot.place(2, 1, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 1), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_13
+    @bad_robot.place(2, 2, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 2), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_14
+    @bad_robot.place(2, 3, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 3), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_15
+    @bad_robot.place(2, 4, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 4), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_16
+    @bad_robot.place(3, 0, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 0), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_17
+    @bad_robot.place(3, 1, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 1), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_18
+    @bad_robot.place(3, 2, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 2), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_19
+    @bad_robot.place(3, 3, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 3), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_east_test_from_square_20
+    @bad_robot.place(3, 4, Direction.EAST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 4), Direction.EAST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
   #Move South Tests
+  def valid_move_south_test_from_square_1
+    @bad_robot.place(0, 4, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 3), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
+  def valid_move_south_test_from_square_2
+    @bad_robot.place(1, 4, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 3), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_3
+    @bad_robot.place(2, 4, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 3), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_4
+    @bad_robot.place(3, 4, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 3), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_5
+    @bad_robot.place(4, 4, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 3), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_6
+    @bad_robot.place(0, 3, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 2), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_7
+    @bad_robot.place(1, 3, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 2), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_8
+    @bad_robot.place(2, 3, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 2), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_9
+    @bad_robot.place(3, 3, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 2), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_10
+    @bad_robot.place(4, 3, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 2), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_11
+    @bad_robot.place(0, 2, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 1), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_12
+    @bad_robot.place(1, 2, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 1), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_13
+    @bad_robot.place(2, 2, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 1), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_14
+    @bad_robot.place(3, 2, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 1), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_15
+    @bad_robot.place(4, 2, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 1), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_16
+    @bad_robot.place(0, 1, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 0), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_17
+    @bad_robot.place(1, 1, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 0), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_18
+    @bad_robot.place(2, 1, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 0), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_19
+    @bad_robot.place(3, 1, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 0), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_south_test_from_square_20
+    @bad_robot.place(4, 1, Direction.SOUTH)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(4, 0), Direction.SOUTH)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
   #Move West Tests
+  def valid_move_west_test_from_square_1
+    @bad_robot.place(4, 4, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 4), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
+  def valid_move_west_test_from_square_2
+    @bad_robot.place(4, 3, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 3), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
   
+  def valid_move_west_test_from_square_3
+    @bad_robot.place(4, 2, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 2), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_4
+    @bad_robot.place(4, 1, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 1), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_5
+    @bad_robot.place(4, 0, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(3, 0), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_6
+    @bad_robot.place(3, 4, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 4), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_7
+    @bad_robot.place(3, 3, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 3), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_8
+    @bad_robot.place(3, 2, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 2), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_9
+    @bad_robot.place(3, 1, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 1), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_10
+    @bad_robot.place(3, 0, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(2, 0), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_11
+    @bad_robot.place(2, 4, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 4), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_12
+    @bad_robot.place(2, 3, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 3), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_13
+    @bad_robot.place(2, 2, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 2), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_14
+    @bad_robot.place(2, 1, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 1), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_15
+    @bad_robot.place(2, 0, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(1, 0), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_16
+    @bad_robot.place(1, 4, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 4), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_17
+    @bad_robot.place(1, 3, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 3), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_18
+    @bad_robot.place(1, 2, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 2), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_19
+    @bad_robot.place(1, 1, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 1), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
+  
+  def valid_move_west_test_from_square_20
+    @bad_robot.place(1, 0, Direction.WEST)
+    @bad_robot.move
+    expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(0, 0), Direction.WEST)
+    assert_equal true, @bad_robot.zen_like(expectedPosture)
+  end
 end
