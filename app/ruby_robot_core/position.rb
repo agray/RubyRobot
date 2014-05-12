@@ -20,7 +20,7 @@
 # * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 # * THE SOFTWARE.
 # 
-require './app/table.rb'
+require_relative '../table.rb'
 
 module RubyRobotCore
   class Position

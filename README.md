@@ -5,9 +5,9 @@ Ruby Implementation of ToyRobot.
 
 Contains app and test branches.
 
-To run app run 'ruby ruby_robot.rb' from the app directory.
+To run the application run 'ruby ruby_robot.rb' from the app directory.
 
-To run test install the test-unit gem and execute 'ruby test_suite.rb' from the test directory.
+To run test install the minitest gem and execute 'rake test' from the root directory to execute the tests.
 
 See Documentation directory for more information on requirements.
 
