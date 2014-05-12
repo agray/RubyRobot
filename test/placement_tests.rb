@@ -21,7 +21,7 @@
 # * THE SOFTWARE.
 # 
 require 'test_base.rb'
-require '../app/direction.rb'
+require './app/direction.rb'
 
 class PlacementTests < TestBase
   #NORTH facing tests
