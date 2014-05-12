@@ -87,7 +87,7 @@ module RubyRobotCore
       return ((@Direction == other.Direction) and (@Position.equals(other.Position)))
     end
 	
-	private
+	protected
 	attr_reader :Direction,:Position
   end
 end
