@@ -53,7 +53,6 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0], data[1] + 1), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
-	end
     
     [[0, 0, Direction::EAST],
      [0, 1, Direction::EAST],
@@ -81,8 +80,7 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0] + 1, data[1]), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
-    end
-	
+      
     [[0, 4, Direction::SOUTH],
      [1, 4, Direction::SOUTH],
      [2, 4, Direction::SOUTH],
@@ -109,7 +107,6 @@ class MovementTests < TestBase
         expectedPosture = RubyRobotCore::Posture.new(RubyRobotCore::Position.new(data[0], data[1] - 1), data[2])
         assert_equal true, @bad_robot.zen_like(expectedPosture)
       end
-	end
     
 	[[4, 4, Direction::WEST],
      [4, 3, Direction::WEST],
@@ -167,4 +164,7 @@ class MovementTests < TestBase
       end
     end
   end
+end
+end
+end
 end
