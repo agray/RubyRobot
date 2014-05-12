@@ -25,7 +25,7 @@ require './app/turn_to.rb'
 require './app/direction.rb'
 
 class RequirementTests < TestBase
-  def requirement__test_1
+  def requirement_test_1
     @bad_robot.place(0, 0, Direction::NORTH)
     @bad_robot.move
     assert_equal "Output: 0,1,NORTH", @bad_robot.report_posture
