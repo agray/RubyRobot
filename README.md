@@ -12,7 +12,7 @@ Coding standards from [Ruby Style Guide](https://github.com/bbatsov/ruby-style-g
 
 ## Thoughts
 
-An elegant solution is better than a simple solution because not everything is necessarily simple.
+An **elegant** solution is better than a **simple** solution because not everything is necessarily simple.
 
 I could have included an IRobot interface that the Robot class implemented.  
 I could have genericised Robot and passed that generic class to the table to achieve polymorphism.  
