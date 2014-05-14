@@ -21,9 +21,16 @@
 # * THE SOFTWARE.
 #
 require 'rake/testtask'
+require 'rake/packagetask'
 
 Rake::TestTask.new do |t|
   t.libs << "test"
   t.test_files = FileList['test/ts_*.rb']
   t.verbose = true
+end
+
+Rake::PackageTask.new("RubyRobot", :noversion) do |p|
+  p.need_zip = true
+  p.zip_command = '"C:\Program Files\7-Zip\7z.exe" a -tzip'
+  p.package_files.include("**/*.rb")
 end
