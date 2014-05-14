@@ -24,22 +24,22 @@ require 'test_base.rb'
 require './app/turn_to.rb'
 
 class CommandTests < TestBase
-  def ignore_move_when_unplaced
+  def test_ignore_move_when_unplaced
     @bad_robot.move
     assert_equal false, @bad_robot.is_placed
   end
 
-  def ignore_turn_left_move_when_unplaced
+  def test_ignore_turn_left_move_when_unplaced
     @bad_robot.turn(TurnTo::LEFT)
     assert_equal false, @bad_robot.is_placed
   end
 
-  def ignore_turn_right_move_when_unplaced
+  def test_ignore_turn_right_move_when_unplaced
     @bad_robot.turn(TurnTo::RIGHT)
     assert_equal false, @bad_robot.is_placed
   end
 	  
-  def ignore_report_when_unplaced
+  def test_ignore_report_when_unplaced
     assert_equal "", @bad_robot.report_posture
   end
 end
